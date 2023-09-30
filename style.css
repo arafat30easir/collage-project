@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+
+}
+
+nav {
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-menu ul li::after {
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: 4s;
+
+}
+
+.nav-menu ul li:hover::after {
+    width: 100%;
+}
+
+.profile-image {
+    width: 20%;
+    position: absolute;
+    top: 61%;
+    left: 70%;
+    transfrom: translate(25%, -28%);
+}
+
+.titlediscription {
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+}
+
+.titlediscription h1 {
+    font-size: 40px;
+}
+
+.titlediscription p {
+    font-size: 15px;
+    color: white;
+}
+
+.titlediscription a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+.titlediscription a:hover {
+    background: green;
+    border: 2px solid black;
+    transition: 5s;
+}
+
+nav span {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .titlediscription {
+        width: 90%;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    .titlediscription h1 {
+        font-size: 20px;
+    }
+
+    nav span {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 1;
+        transition: 5s;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-menu ul {
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 28%;
+        position: absolute;
+        top: 70%;
+        left: 37%;
+        transfrom: translate(-50% -28%);
+    }
+
+
+}
+
+/*------Techers- list----*/
+
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.Techers-list h1 {
+    text-decoration: underline;
+}
+
+.Techers-list-col {
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.Techers-list-col img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.Techers-list-col h2 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.Techers-list-col p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+    text-align: left;
+}
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+
+/*------Techers- list----*/
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.Techers-list-col {
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.Techers-list-col img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.Techers-list-col {
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.Techers-list-col img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.Techers-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+
+}
+
+/*----student skills----*/
+.Skills {
+    width: 80%;
+    margin: auto;
+    background: orchid;
+    padding-top: 100px;
+}
+
+.Skills h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Skills-col {
+    flex-basis: 60%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.Skills-col h2 {
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+.Skills:hover h1{
+    box-shadow: 0 0 20px 0 white;
+}
+.Skills:hover h2{
+    box-shadow: 0 0 20px 0 white;
+ }
+ Skills:hover p{
+    box-shadow: 0 0 20px 0 white;
+ }
+ Skills:hover p{
+    box-shadow: 0 0 20px 0 white;
+ }   
+
+ Skills:hover p{
+    box-shadow: 0 0 20px 0 white;
+ }   
+
+/*-----Games-----*/
+.Games {
+    width: 80%;
+    margin: auto;
+    background: black;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.Games h1 {
+    font-size: 30px;
+    color: wheat;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.Games h2 {
+    background-color: wheat;
+    line-height: 20px;
+}
+
+.Games h3 {
+    background-color: wheat;
+    line-height: 20px;
+
+}
+
+.Games h4 {
+    background-color: wheat;
+    line-height: 20px;
+}
+
+.Games p {
+    color: wheat;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+    font-style: italic;
+}
+
+.Games-collam {
+    flex-basis: 30%;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.Games h1{
+    font-style: italic;
+}
+.Games p{
+    font-style: italic;
+}
+.Games-collam h2{
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+.Games-collam h3{
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+.Games-collam h4{
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+.Games-collam:hover{
+    box-shadow: 0 0 20px 0 white;
+}
+.Games-collam:hover h2{
+   box-shadow: 0 0 20px 0 green;
+}
+.Games-collam:hover h3{
+    box-shadow: 0 0 20px 0 green;
+ }
+ .Games-collam:hover h4{
+    box-shadow: 0 0 20px 0 green;
+ }
+ .Games:hover h1{
+    box-shadow: 0 0 20px 0 white;
+ }
+ .Games:hover p{
+    box-shadow: 0 0 20px 0 white;
+ }
+
+
+
+
+ /*----Student Portfolios-----*/
+ .Portfolios{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+ }
+ .Portfolios h1{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 300;
+ }
+ .Portfolios p{
+    color: rgb(87, 73, 73);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+ }
+ .Portfolios-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+ }
+ .Portfolios-col img{
+    width: 100%;
+    display: block;
+    
+ }
+.overlay:hover{
+    background-color: rgb(187, 30, 82);
+}
+.Portfolios{
+    background-color: whitesmoke;
+}
+
+/*----testimonials-----*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+ }
+ .testimonials h1{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 300;
+ }
+ .testimonials p{
+    color: rgb(87, 73, 73);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+ }
+ 
